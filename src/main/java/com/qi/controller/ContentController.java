@@ -20,7 +20,6 @@ public class ContentController {
         return contentService.parseContent(keyword);
     }
 
-    // 不带高亮
     @GetMapping("/search/{keyword}/{pageNo}/{pageSize}")
     public List<Map<String,Object>> search(@PathVariable("keyword") String keyword,
                                            @PathVariable("pageNo") int pageNo,
